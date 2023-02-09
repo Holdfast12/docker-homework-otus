@@ -1,0 +1,6 @@
+docker-compose build
+docker-compose down
+docker rmi $(docker images -a -q)
+
+#сборка образа из докерфайла в текущей папке
+docker build . -t holdfast12/nginx
